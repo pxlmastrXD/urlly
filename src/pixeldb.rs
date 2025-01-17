@@ -18,6 +18,12 @@ mod minibash {
         }
     "error"
     }
+    pub fn checkOutput(output: &str) -> bool {
+        return match output {
+            "error" => false,
+            else => true
+    }
+    }
 }
 
 
