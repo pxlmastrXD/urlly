@@ -1,7 +1,7 @@
 use std::process::Command;
 
 // Tested 1/31/25
-fn runbash(x: &str) -> String {
+pub fn runbash(x: &str) -> String {
     let command = "bash";
     let argument = "-c";
     let output = Command::new(command)
